@@ -11,7 +11,7 @@ import (
 )
 
 func Register(ctx *gin.Context) {
-	DB := common.GetDB()
+	DB := common.InitDB()
 	//获取参数
 	name := ctx.PostForm("name")
 	telephone := ctx.PostForm("telephone")
